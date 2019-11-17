@@ -17,19 +17,6 @@ public class RestWebService {
 	PersonRepository personRepository;
 	VehiculeRepository vehiculeRepository;
 
-	@Autowired
-	public RestWebService(RentRepository rentRepository) {
-		super();
-		this.rentRepository = rentRepository;
-
-	}
-
-	@GetMapping("/rents")
-	public Iterable<Rent> getCities(){
-		return rentRepository.findAll();
-	}
-
-	/*
 
 	@Autowired
 	public RestWebService(RentRepository rentRepository, PersonRepository personRepository, VehiculeRepository vehiculeRepository) {
@@ -53,7 +40,7 @@ public class RestWebService {
 	public Iterable<Vehicule> getVehicules(){
 		return vehiculeRepository.findAll();
 	}
-	*/
+
 	
 	
 }

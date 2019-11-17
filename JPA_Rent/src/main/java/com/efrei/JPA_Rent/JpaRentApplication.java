@@ -44,6 +44,8 @@ public class JpaRentApplication {
 			log.info(dateEnd.toString());
 
 			Person person1 = new Person("person1");
+			System.out.println("test");
+
 			Rent rent1  = new Rent(dateStart, dateEnd, person1);
 			log.info(rent1.toString());
 
