@@ -21,13 +21,14 @@ public class Rent {
 	@LastModifiedDate @Temporal(TemporalType.TIMESTAMP)
 	private Date endRent;
 
-	@ManyToOne(cascade=CascadeType.ALL)
+	@ManyToOne(cascade=CascadeType.ALL) @JsonIgnore
 	private Person person;
 
-	@OneToMany(mappedBy = "rent", cascade=CascadeType.ALL, fetch = FetchType.EAGER)
+	@OneToMany(mappedBy = "rent", cascade=CascadeType.ALL, fetch = FetchType.EAGER) @JsonIgnore
 	private List<Vehicule> vehicules = new ArrayList<>();
-	private List<Car> cars = new ArrayList<>();
-	private List<Van> vans = new ArrayList<>();
+
+	//private List<Car> cars = new ArrayList<Car>();
+	//private List<Van> vans = new ArrayList<Van>();
 
 	public Rent() { }
 
@@ -41,12 +42,14 @@ public class Rent {
 		this.beginRent = _beginRent;
 		this.endRent = _endRent;
 		this.person = _person;
+		this.vehicules.add(car);
 	}
 
 	public Rent (Date _beginRent, Date _endRent, Person _person, Van van) {
 		this.beginRent = _beginRent;
 		this.endRent = _endRent;
 		this.person = _person;
+		this.vehicules.add(van);
 	}
 
 	@Override
@@ -55,19 +58,19 @@ public class Rent {
 	}
 
 	public void addCar(Car car){
-		cars.add(car);
+		vehicules.add(car);
 	}
 
 	public void addVan(Van van){
-		vans.add(van);
+		vehicules.add(van);
 	}
 
 	public void rmCar(Car car){
-		cars.remove(car);
+		vehicules.remove(car);
 	}
 
 	public void rmVan(Van van){
-		vans.remove(van);
+		vehicules.remove(van);
 	}
 
 	public Long getId() {
@@ -108,22 +111,6 @@ public class Rent {
 
 	public void setVehicules(List<Vehicule> vehicules) {
 		this.vehicules = vehicules;
-	}
-
-	public List<Vehicule> getCars() {
-		return cars;
-	}
-
-	public void setCars(List<Vehicule> cars) {
-		this.cars = cars;
-	}
-
-	public List<Vehicule> getVans() {
-		return vans;
-	}
-
-	public void setVans(List<Vehicule> vans) {
-		this.vans = vans;
 	}
 
 	/*

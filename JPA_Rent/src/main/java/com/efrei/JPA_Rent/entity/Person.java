@@ -5,6 +5,7 @@ import java.util.List;
 
 import javax.persistence.*;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.lang.NonNull;
 
 @Entity
@@ -15,8 +16,8 @@ public class Person {
 
 	@NonNull private String name;
 
-	@OneToMany(mappedBy = "person", cascade=CascadeType.ALL, fetch = FetchType.EAGER)
-	private List<Rent> rents = new ArrayList();
+	@OneToMany(mappedBy = "person", cascade=CascadeType.ALL, fetch = FetchType.EAGER) @JsonIgnore
+	private List<Rent> rents = new ArrayList<Rent>();
 
 	public Person() { }
 

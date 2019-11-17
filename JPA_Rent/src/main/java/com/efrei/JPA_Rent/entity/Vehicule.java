@@ -1,6 +1,7 @@
 package com.efrei.JPA_Rent.entity;
 
 import ch.qos.logback.classic.net.SMTPAppender;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.sun.javafx.beans.IDProperty;
 
 import java.util.ArrayList;
@@ -14,9 +15,9 @@ import javax.persistence.*;
 @Table(name = "vehicule")
 @Inheritance(strategy=InheritanceType.SINGLE_TABLE)
 public abstract class Vehicule {
-	@Id private String plateNumber;
+	@Id @Column private String plateNumber;
 
-	@ManyToOne private Rent rent;
+	@ManyToOne @JsonIgnore private Rent rent;
 
 	public Vehicule() { }
 
@@ -24,7 +25,7 @@ public abstract class Vehicule {
 
 	@Override
 	public String toString() {
-		return " [plateNumber = " + plateNumber + "] ";
+		return "plateNumber = " + plateNumber;
 	}
 
 	public String getPlateNumber() {

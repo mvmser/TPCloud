@@ -8,10 +8,27 @@ import javax.persistence.ManyToOne;
 public class Van extends Vehicule {
 	private int maxWeight;
 
+	public Van() {
+	}
+
 	public Van(String _plateNumber, int _maxWeight){
 		super(_plateNumber);
 		this.maxWeight = _maxWeight;
 	}
+
+	@Override
+	public String toString() {
+		return " Van [" + super.toString() + ", max weight = " + this.maxWeight+"] ";
+	}
+
+	public int getMaxWeight() {
+		return maxWeight;
+	}
+
+	public void setMaxWeight(int maxWeight) {
+		this.maxWeight = maxWeight;
+	}
+
 	/*private double maxWeight;
 	private Vehicule vehicule;
 
