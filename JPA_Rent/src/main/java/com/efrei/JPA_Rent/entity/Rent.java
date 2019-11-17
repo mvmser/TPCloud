@@ -26,6 +26,8 @@ public class Rent {
 
 	@OneToMany(mappedBy = "rent", cascade=CascadeType.ALL, fetch = FetchType.EAGER)
 	private List<Vehicule> vehicules = new ArrayList<>();
+	private List<Car> cars = new ArrayList<>();
+	private List<Van> vans = new ArrayList<>();
 
 	public Rent() { }
 
@@ -34,6 +36,96 @@ public class Rent {
 		this.endRent = _endRent;
 		this.person = _person;
 	}
+
+	public Rent (Date _beginRent, Date _endRent, Person _person, Car car) {
+		this.beginRent = _beginRent;
+		this.endRent = _endRent;
+		this.person = _person;
+	}
+
+	public Rent (Date _beginRent, Date _endRent, Person _person, Van van) {
+		this.beginRent = _beginRent;
+		this.endRent = _endRent;
+		this.person = _person;
+	}
+
+	@Override
+	public String toString() {
+		return "Rent [begin = " + this.beginRent + ", end = " + this.endRent + ", person =" + this.person + ", vehicule(s) = " + this.vehicules + "]";
+	}
+
+	public void addCar(Car car){
+		cars.add(car);
+	}
+
+	public void addVan(Van van){
+		vans.add(van);
+	}
+
+	public void rmCar(Car car){
+		cars.remove(car);
+	}
+
+	public void rmVan(Van van){
+		vans.remove(van);
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public Date getBeginRent() {
+		return beginRent;
+	}
+
+	public void setBeginRent(Date beginRent) {
+		this.beginRent = beginRent;
+	}
+
+	public Date getEndRent() {
+		return endRent;
+	}
+
+	public void setEndRent(Date endRent) {
+		this.endRent = endRent;
+	}
+
+	public Person getPerson() {
+		return person;
+	}
+
+	public void setPerson(Person person) {
+		this.person = person;
+	}
+
+	public List<Vehicule> getVehicules() {
+		return vehicules;
+	}
+
+	public void setVehicules(List<Vehicule> vehicules) {
+		this.vehicules = vehicules;
+	}
+
+	public List<Vehicule> getCars() {
+		return cars;
+	}
+
+	public void setCars(List<Vehicule> cars) {
+		this.cars = cars;
+	}
+
+	public List<Vehicule> getVans() {
+		return vans;
+	}
+
+	public void setVans(List<Vehicule> vans) {
+		this.vans = vans;
+	}
+
 	/*
 	@Id @GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;

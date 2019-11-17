@@ -22,6 +22,27 @@ public abstract class Vehicule {
 
 	public Vehicule(String _plateNumber) { this.plateNumber = _plateNumber;}
 
+	@Override
+	public String toString() {
+		return " [plateNumber = " + plateNumber + "] ";
+	}
+
+	public String getPlateNumber() {
+		return plateNumber;
+	}
+
+	public Rent getRent() {
+		return rent;
+	}
+
+	public void setPlateNumber(String plateNumber) {
+		this.plateNumber = plateNumber;
+	}
+
+	public void setRent(Rent rent) {
+		this.rent = rent;
+	}
+
 	/*
 	//@OneToMany(targetEntity = Rent.class, mappedBy = "vehicule")
 	private List<Person> persons = new ArrayList<Person>();

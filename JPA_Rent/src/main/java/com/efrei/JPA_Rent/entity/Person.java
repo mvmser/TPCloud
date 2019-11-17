@@ -19,11 +19,39 @@ public class Person {
 	private List<Rent> rents = new ArrayList();
 
 	public Person() { }
+
 	public Person(String _name) {
 		this.name = _name;
 	}
 
+	@Override
+	public String toString() {
+		return " [Name = " + this.name + "] ";
+	}
 
+	public long getId() {
+		return id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public List<Rent> getRents() {
+		return rents;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setRents(List<Rent> rents) {
+		this.rents = rents;
+	}
 
 	/*
 	@Id
