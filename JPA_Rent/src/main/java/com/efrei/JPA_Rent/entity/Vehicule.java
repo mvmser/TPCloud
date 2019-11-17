@@ -1,14 +1,6 @@
 package com.efrei.JPA_Rent.entity;
 
-import ch.qos.logback.classic.net.SMTPAppender;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.sun.javafx.beans.IDProperty;
-
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-
 import javax.persistence.*;
 
 @Entity

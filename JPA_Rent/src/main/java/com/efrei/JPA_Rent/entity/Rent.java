@@ -3,8 +3,6 @@ package com.efrei.JPA_Rent.entity;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
-import org.springframework.lang.NonNull;
-
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Date;
@@ -43,6 +41,7 @@ public class Rent {
 		this.endRent = _endRent;
 		this.person = _person;
 		this.vehicules.add(car);
+		car.setRent(this);
 	}
 
 	public Rent (Date _beginRent, Date _endRent, Person _person, Van van) {
@@ -50,6 +49,7 @@ public class Rent {
 		this.endRent = _endRent;
 		this.person = _person;
 		this.vehicules.add(van);
+		//van.setRent(this);
 	}
 
 	@Override
@@ -58,10 +58,12 @@ public class Rent {
 	}
 
 	public void addCar(Car car){
+		//car.setRent(this);
 		vehicules.add(car);
 	}
 
 	public void addVan(Van van){
+		//van.setRent(this);
 		vehicules.add(van);
 	}
 
