@@ -1,0 +1,54 @@
+2019-11-18 19:35:48.569  INFO 13656 --- [restartedMain] c.e.carservice.CarServiceApplication     : Starting CarServiceApplication on DESKTOP-3FE67RV with PID 13656 (started by SERHIR Mohamed in C:\Users\SERHIR Mohamed\Documents\GitHub\TPCloud\Rest_WebServiceRent)
+2019-11-18 19:35:48.583  INFO 13656 --- [restartedMain] c.e.carservice.CarServiceApplication     : No active profile set, falling back to default profiles: default
+2019-11-18 19:35:48.658  INFO 13656 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-18 19:35:48.659  INFO 13656 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-18 19:35:51.135  INFO 13656 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-18 19:35:51.173  INFO 13656 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-18 19:35:51.173  INFO 13656 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2019-11-18 19:35:51.196  INFO 13656 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_221\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\app\18.0.0\dbhomeXE\bin;C:\Program Files\IBM\ILOG\CPLEX_Studio_Community129\opl\bin\x64_win64;C:\Program Files\IBM\ILOG\CPLEX_Studio_Community129\opl\oplide\;C:\Program Files\IBM\ILOG\CPLEX_Studio_Community129\cplex\bin\x64_win64;C:\Program Files\IBM\ILOG\CPLEX_Studio_Community129\cpoptimizer\bin\x64_win64;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Google Protobuf\bin;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\PrivateAssemblies\;C:\Gradle\gradle-5.6.2\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Git\cmd;C:\Users\SERHIR Mohamed\AppData\Local\Microsoft\WindowsApps;C:\Users\SERHIR Mohamed\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\SERHIR Mohamed\AppData\Local\GitHubDesktop\bin;.]
+2019-11-18 19:35:51.342  INFO 13656 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-18 19:35:51.342 DEBUG 13656 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-11-18 19:35:51.342  INFO 13656 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2682 ms
+2019-11-18 19:35:51.380  INFO 13656 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-11-18 19:35:51.387  INFO 13656 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-11-18 19:35:51.387  INFO 13656 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-11-18 19:35:51.391  INFO 13656 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2019-11-18 19:35:51.391  INFO 13656 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-11-18 19:35:51.537 DEBUG 13656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-11-18 19:35:51.696  INFO 13656 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-18 19:35:51.725 DEBUG 13656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1, ResponseBodyAdvice
+2019-11-18 19:35:51.837 DEBUG 13656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 8 mappings in 'requestMappingHandlerMapping'
+2019-11-18 19:35:51.866 DEBUG 13656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-11-18 19:35:51.876 DEBUG 13656 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-11-18 19:35:52.120  INFO 13656 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-18 19:35:52.178  INFO 13656 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-18 19:35:52.178  INFO 13656 --- [restartedMain] c.e.carservice.CarServiceApplication     : Started CarServiceApplication in 4.282 seconds (JVM running for 5.028)
+2019-11-18 19:36:16.639  INFO 13656 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-18 19:36:16.640  INFO 13656 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-18 19:36:16.640 DEBUG 13656 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2019-11-18 19:36:16.655 DEBUG 13656 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-11-18 19:36:16.657  INFO 13656 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2019-11-18 19:36:16.678 DEBUG 13656 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/cars", parameters={}
+2019-11-18 19:36:16.685 DEBUG 13656 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.util.List<com.example.carservice.Car> com.example.carservice.CarRentalService.getCars()
+2019-11-18 19:36:16.707  INFO 13656 --- [http-nio-8080-exec-1] com.example.carservice.CarRentalService  : [Car [plateNumber=11AA22, brand=Ferrari, price=600]
+, Car [plateNumber=33BB44, brand=Porshe, price=700]
+, Car [plateNumber=26HY95, brand=Peugeot, price=50]
+, Car [plateNumber=68ZU21, brand=Mercedes, price=70]
+, Car [plateNumber=96HF45, brand=Audi, price=60]
+, Car [plateNumber=96GF34, brand=BMW, price=75]
+, Car [plateNumber=28HQ78, brand=Volkwagen, price=55]
+, Car [plateNumber=04GQ34, brand=Fiat, price=30]
+, Car [plateNumber=48PB34, brand=Tesla, price=100]
+]
+2019-11-18 19:36:16.751 DEBUG 13656 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-11-18 19:36:16.752 DEBUG 13656 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Car [plateNumber=11AA22, brand=Ferrari, price=600]
+, Car [plateNumber=33BB44, brand=Porshe, price=700]
+, Car [plateNumber=26HY95, brand=Peugeot, price=50]
+, Car [plateNumber=68ZU21, brand=Mercedes, price=70]
+, Car [plateNumber=96HF45, brand=Audi, price=60]
+, Car [plateNumber=96GF34, brand=BMW, price=75]
+, Car [plateNumber=28HQ78, brand=Volkwagen, price=55]
+, Car [plateNumber=04GQ34, brand=Fiat, price=30]
+, Car [plateNumber=48PB34, brand=Tesla, price=100]
+]]
+2019-11-18 19:36:16.860 DEBUG 13656 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
