@@ -7,7 +7,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.lang.NonNull;
 
 @Entity
-@Table(name = "person")
+//@Table(name = "person")
 public class Person {
 	@Id @GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;

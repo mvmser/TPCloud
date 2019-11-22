@@ -1,15 +1,24 @@
 package com.efrei.JPA_Rent.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "vehicule")
-@Inheritance(strategy=InheritanceType.SINGLE_TABLE)
+@Inheritance(strategy= InheritanceType.SINGLE_TABLE)
 public abstract class Vehicule {
 	@Id @Column private String plateNumber;
 
-	@ManyToOne @JsonIgnore private Rent rent;
+	//@ManyToOne @JsonIgnore private List<Rent> rents = new ArrayList<>();
+
+    @OneToMany(mappedBy = "vehicule", cascade=CascadeType.ALL, fetch = FetchType.EAGER) @JsonIgnore
+	@Column
+	private List<Rent> rents = new ArrayList<>();
+
+	//private Rent rent;
 
 	public Vehicule() { }
 
@@ -24,16 +33,20 @@ public abstract class Vehicule {
 		return plateNumber;
 	}
 
-	public Rent getRent() {
-		return rent;
-	}
-
 	public void setPlateNumber(String plateNumber) {
 		this.plateNumber = plateNumber;
 	}
 
-	public void setRent(Rent rent) {
-		this.rent = rent;
+	public List<Rent> getRents() {
+		return rents;
+	}
+
+	public void addRent(Rent rent){
+		this.rents.add(rent);
+	}
+
+	public void setRents(List<Rent> rents) {
+		this.rents = rents;
 	}
 
 	/*

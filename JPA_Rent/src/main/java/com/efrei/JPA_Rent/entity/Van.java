@@ -1,8 +1,6 @@
 package com.efrei.JPA_Rent.entity;
 
 import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
 
 @Entity
 public class Van extends Vehicule {

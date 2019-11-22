@@ -4,7 +4,6 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 import javax.persistence.*;
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -16,14 +15,18 @@ public class Rent {
 
 	@CreatedDate @Temporal(TemporalType.TIMESTAMP)
 	private Date beginRent;
+
 	@LastModifiedDate @Temporal(TemporalType.TIMESTAMP)
 	private Date endRent;
 
-	@ManyToOne(cascade=CascadeType.ALL) @JsonIgnore
+	@ManyToOne(cascade=CascadeType.ALL,  fetch = FetchType.EAGER) @JsonIgnore
 	private Person person;
 
-	@OneToMany(mappedBy = "rent", cascade=CascadeType.ALL, fetch = FetchType.EAGER) @JsonIgnore
-	private List<Vehicule> vehicules = new ArrayList<>();
+	@ManyToOne(cascade = CascadeType.ALL,  fetch = FetchType.EAGER) @JsonIgnore
+	private Vehicule vehicule;
+
+	//@OneToMany(mappedBy = "rent", cascade=CascadeType.ALL, fetch = FetchType.EAGER) @JsonIgnore
+	//private List<Vehicule> vehicules = new ArrayList<>();
 
 	//private List<Car> cars = new ArrayList<Car>();
 	//private List<Van> vans = new ArrayList<Van>();
@@ -40,39 +43,41 @@ public class Rent {
 		this.beginRent = _beginRent;
 		this.endRent = _endRent;
 		this.person = _person;
-		this.vehicules.add(car);
-		car.setRent(this);
+		this.vehicule = car;
+		//this.vehicules.add(car);
+		car.addRent(this);
 	}
 
 	public Rent (Date _beginRent, Date _endRent, Person _person, Van van) {
 		this.beginRent = _beginRent;
 		this.endRent = _endRent;
 		this.person = _person;
-		this.vehicules.add(van);
-		//van.setRent(this);
+		this.vehicule = van;
+		//this.vehicules.add(van);
+		van.addRent(this);
 	}
 
 	@Override
 	public String toString() {
-		return "Rent [begin = " + this.beginRent + ", end = " + this.endRent + ", person =" + this.person + ", vehicule(s) = " + this.vehicules + "]";
+		return "Rent [begin = " + this.beginRent + ", end = " + this.endRent + ", person =" + this.person + ", vehicule(s) = " + this.vehicule + "]";
 	}
 
 	public void addCar(Car car){
 		//car.setRent(this);
-		vehicules.add(car);
+		//vehicules.add(car);
 	}
 
 	public void addVan(Van van){
 		//van.setRent(this);
-		vehicules.add(van);
+		//vehicules.add(van);
 	}
 
 	public void rmCar(Car car){
-		vehicules.remove(car);
+		//vehicules.remove(car);
 	}
 
 	public void rmVan(Van van){
-		vehicules.remove(van);
+		//vehicules.remove(van);
 	}
 
 	public Long getId() {
@@ -107,12 +112,12 @@ public class Rent {
 		this.person = person;
 	}
 
-	public List<Vehicule> getVehicules() {
-		return vehicules;
-	}
+	//public List<Vehicule> getVehicules() {
+		//return vehicules;
+	//}
 
 	public void setVehicules(List<Vehicule> vehicules) {
-		this.vehicules = vehicules;
+		//this.vehicules = vehicules;
 	}
 
 	/*

@@ -13,10 +13,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
-import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
 
-import javax.servlet.annotation.WebServlet;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -32,7 +30,7 @@ public class JpaRentApplication {
 }
 */
 @SpringBootApplication
-//@EntityScan("com.efrei.JPA_Rent")
+@EntityScan("com.efrei.JPA_Rent")
 public class JpaRentApplication {
 	private static final Logger log = LoggerFactory.getLogger(JpaRentApplication.class);
 
@@ -41,7 +39,7 @@ public class JpaRentApplication {
 	}
 
 	@Bean
-	public CommandLineRunner demo(RentRepository rentRepository, PersonRepository personRepository,	VehiculeRepository vehiculeRepository) {
+	public CommandLineRunner demo(RentRepository rentRepository, PersonRepository personRepository, VehiculeRepository vehiculeRepository) {
 		return (args) -> {
 
 			SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
@@ -62,9 +60,7 @@ public class JpaRentApplication {
 			Van van2 = new Van("DE7534", 1000);
 
 			Rent rent1  = new Rent(dateStart, dateEnd, person1, car1);
-			rent1.addVan(van1);
-			Rent rent2  = new Rent(dateStart, dateEnd, person2);
-			rent2.addCar(car2);
+			Rent rent2  = new Rent(dateStart, dateEnd, person2, car2);
 			Rent rent3  = new Rent(dateStart2, dateEnd2, person2, van2);
 
 			log.info(rent1.toString());
