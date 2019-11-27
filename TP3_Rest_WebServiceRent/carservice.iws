@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a1715b20-0521-40d8-9c67-df2f4d140cde" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/carwebservice.ipr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myapp.log.2019-11-17.0.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JPA_Rent/src/main/java/com/efrei/JPA_Rent/JpaRentApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JPA_Rent/src/main/java/com/efrei/JPA_Rent/JpaRentApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JPA_Rent/src/main/java/com/efrei/JPA_Rent/entity/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JPA_Rent/src/main/java/com/efrei/JPA_Rent/entity/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JPA_Rent/src/main/java/com/efrei/JPA_Rent/entity/Rent.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JPA_Rent/src/main/java/com/efrei/JPA_Rent/entity/Rent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JPA_Rent/src/main/java/com/efrei/JPA_Rent/entity/Van.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JPA_Rent/src/main/java/com/efrei/JPA_Rent/entity/Van.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JPA_Rent/src/main/java/com/efrei/JPA_Rent/entity/Vehicule.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JPA_Rent/src/main/java/com/efrei/JPA_Rent/entity/Vehicule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JPA_Rent/src/main/java/com/efrei/JPA_Rent/entity/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../JPA_Rent/src/main/java/com/efrei/JPA_Rent/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JPA_Rent/src/main/java/com/efrei/JPA_Rent/repository/CarRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JPA_Rent/src/main/java/com/efrei/JPA_Rent/repository/CarRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JPA_Rent/src/main/java/com/efrei/JPA_Rent/repository/PersonRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JPA_Rent/src/main/java/com/efrei/JPA_Rent/repository/PersonRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JPA_Rent/src/main/java/com/efrei/JPA_Rent/repository/RentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JPA_Rent/src/main/java/com/efrei/JPA_Rent/repository/RentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JPA_Rent/src/main/java/com/efrei/JPA_Rent/repository/VanRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JPA_Rent/src/main/java/com/efrei/JPA_Rent/repository/VanRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JPA_Rent/src/main/java/com/efrei/JPA_Rent/repository/VehiculeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JPA_Rent/src/main/java/com/efrei/JPA_Rent/repository/VehiculeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JPA_Rent/src/main/java/com/efrei/JPA_Rent/repository/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileContent/fileContent.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/carservice/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/carservice/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/carservice/CarRentalService$CustomJsonDateDeserializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/carservice/CarRentalService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/carservice/CarRentalService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/client/CarRentalClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/client/CarRentalClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carservice.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/carservice.ipr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carservice.iws" beforeDir="false" afterPath="$PROJECT_DIR$/carservice.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carwebservice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/carwebservice.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapp.log" beforeDir="false" afterPath="$PROJECT_DIR$/myapp.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/carservice/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/carservice/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/carservice/CarRentalService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/carservice/CarRentalService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/client/CarRentalClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/client/CarRentalClient.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1Tl2IwBYlPDNuMlPQQeLCU5hhwN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="CarServiceApplication" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="C:/Program Files/Java/jdk1.8.0_221" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.example.carservice.CarServiceApplication" />
+      <module name="carwebservice.main" />
+      <method v="2">
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a1715b20-0521-40d8-9c67-df2f4d140cde" name="Default Changelist" comment="" />
+      <created>1574020284073</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574020284073</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
