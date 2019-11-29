@@ -1,6 +1,8 @@
 package com.example.carservice;
 
 import java.io.Serializable;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -10,17 +12,16 @@ public class Rent implements Serializable {
 	private Date begin;
 	private Date end;
 
-	//private List<Car> car = new ArrayList<Car>();
+	private List<Car> cars = new ArrayList<Car>();
 	
     public Rent() {
     	super();
     }
-    public Rent(Date begin, Date end, Car car) {
+    public Rent(String _begin, String _end, List<Car> _cars) throws ParseException {
 		super();
-		this.begin = begin;
-		this.end = end;
-		this.car = car;
-	
+		this.begin = Rent.stringToDate(_begin);
+		this.end =  Rent.stringToDate(_end);
+		this.cars = _cars;
 	}
 	public Car getCar() {
 		return car;
@@ -45,5 +46,8 @@ public class Rent implements Serializable {
     public String toString() {
     	return "Car [begin =" + begin + ", end=" + end + "]" + "\n";
     }
-    
+
+    static Date stringToDate(String date) throws ParseException {
+    	return new SimpleDateFormat("dd/MM/yyyy").parse(date);
+	}
 }

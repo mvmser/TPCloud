@@ -12,9 +12,9 @@ public class Car implements Serializable {
 	private int price;
 	private boolean isRented;
 
-	
+	private Dates dates;
+
 	private List<Rent> rents = new ArrayList<>();
-	
 	
     public Car() {
     	super();
@@ -67,7 +67,6 @@ public class Car implements Serializable {
     }
 
     boolean getBackCar() {
-        
         return false;
     }
 

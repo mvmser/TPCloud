@@ -18,7 +18,15 @@
       <module name="carwebservice.test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
-  <component name="CopyrightManager" default="" />
+  <component name="CopyrightManager">
+    <copyright>
+      <option name="notice" value="Copyright (c) &amp;#36;today.year Serhir - Zarga" />
+      <option name="myName" value="Mohamed" />
+    </copyright>
+    <module2copyright>
+      <element module="All" copyright="Mohamed" />
+    </module2copyright>
+  </component>
   <component name="DependencyValidationManager">
     <option name="SKIP_IMPORT_STATEMENTS" value="false" />
   </component>
@@ -35,6 +43,7 @@
             <option value="$PROJECT_DIR$" />
           </set>
         </option>
+        <option name="useAutoImport" value="true" />
         <option name="useQualifiedModuleNames" value="true" />
       </GradleProjectSettings>
     </option>
@@ -291,6 +300,15 @@
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/3.11.1/55362d8f04018b1140c5a370057bf8cd4a63c3de/assertj-core-3.11.1-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Gradle: org.atteo:evo-inflector:1.2.2">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.atteo/evo-inflector/1.2.2/2551aad98d65ac5464d81fe05f0e1516cfe471c9/evo-inflector-1.2.2.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.atteo/evo-inflector/1.2.2/26ad4b62e83373b6a2510fea61e72b2faa87920e/evo-inflector-1.2.2-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Gradle: org.hamcrest:hamcrest-core:1.3">
       <CLASSES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar!/" />
@@ -399,6 +417,13 @@
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-devtools/2.1.0.RELEASE/e5e1608a35e9d9d0eac68bd67a5f65eb2b4c0ef3/spring-boot-devtools-2.1.0.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Gradle: org.springframework.boot:spring-boot-starter-data-rest:2.1.0.RELEASE">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-data-rest/2.1.0.RELEASE/3cbade5996c7733af70dd8689c48664f45a0efed/spring-boot-starter-data-rest-2.1.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
     <library name="Gradle: org.springframework.boot:spring-boot-starter-json:2.1.0.RELEASE">
       <CLASSES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-json/2.1.0.RELEASE/704c38f5c3ad5205701391110dd4c6f5623fb2cc/spring-boot-starter-json-2.1.0.RELEASE.jar!/" />
@@ -468,6 +493,51 @@
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/2.1.0.RELEASE/d62288e578b128c1be43de91cf65d6922220befb/spring-boot-2.1.0.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Gradle: org.springframework.data:spring-data-commons:2.1.2.RELEASE">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/2.1.2.RELEASE/ca9489fe0e3a7a590160ccfc6dc35ee19137a895/spring-data-commons-2.1.2.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/2.1.2.RELEASE/2b7030ac124a46f162cd273a00dbbeff030de202/spring-data-commons-2.1.2.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.springframework.data:spring-data-rest-core:3.1.2.RELEASE">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-rest-core/3.1.2.RELEASE/ece0e5c2876823b123529f56a4e66f3faf2b9471/spring-data-rest-core-3.1.2.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-rest-core/3.1.2.RELEASE/9ca04a06067597f3f3b74562ad15aa403bc69650/spring-data-rest-core-3.1.2.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.springframework.data:spring-data-rest-webmvc:3.1.2.RELEASE">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-rest-webmvc/3.1.2.RELEASE/9e9444878619f24b4661085db95021e3ba884dcb/spring-data-rest-webmvc-3.1.2.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-rest-webmvc/3.1.2.RELEASE/8d92eed11e67959d0dfd401ef0094fe3498c7c05/spring-data-rest-webmvc-3.1.2.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.springframework.hateoas:spring-hateoas:0.25.0.RELEASE">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.hateoas/spring-hateoas/0.25.0.RELEASE/22d1abd575426709734ab83e7d81d6deb4addbf6/spring-hateoas-0.25.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.hateoas/spring-hateoas/0.25.0.RELEASE/76dc730cfabfdb5e6cf65dd98e9995ca88ed0117/spring-hateoas-0.25.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.plugin/spring-plugin-core/1.2.0.RELEASE/f380e7760032e7d929184f8ad8a33716b75c0657/spring-plugin-core-1.2.0.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.plugin/spring-plugin-core/1.2.0.RELEASE/112d82259202fa909d51cf7ccefae0c5523f1373/spring-plugin-core-1.2.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Gradle: org.springframework:spring-aop:5.1.2.RELEASE">
       <CLASSES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.1.2.RELEASE/bc3cdf3c81bc0a3482cc7f6b9e00ab76847056a7/spring-aop-5.1.2.RELEASE.jar!/" />
@@ -529,6 +599,15 @@
       <JAVADOC />
       <SOURCES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/5.1.2.RELEASE/7f8ba1aa5c6cc053e1ac6d68ab677e08b0870bc3/spring-test-5.1.2.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.springframework:spring-tx:5.1.2.RELEASE">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/5.1.2.RELEASE/68fcf8efc7b0134126adf9aa4c5053d10d231b57/spring-tx-5.1.2.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/5.1.2.RELEASE/48dae2fe24250d570f449ef835ce1339bc55f84f/spring-tx-5.1.2.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: org.springframework:spring-web:5.1.2.RELEASE">
